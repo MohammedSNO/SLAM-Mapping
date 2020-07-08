@@ -1,0 +1,15 @@
+INSTRUCTIONS ON HOW TO MAP:
+
+1-OPEN THE TERMINAL THEN TYPE $ cd (then put the name of the workspace that has the turtlebot3 packages in my case it is catkin_ws)
+2-$ source devel/setup.bash
+3-$ export TURTLEBOT3_MODEL=burger (you can use waffle or waffle pi instead)
+4-$ roslaunch turtlebot3_gazebo (then double tap and choose the map)
+5-open anthoer terminal repeat steps 1 to 3 
+6-$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch ----------> this line to cotrol the robot
+7-open anthoer terminal repeat steps 1 to 3 
+8-$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+9-start mapping 
+10-to save the map type $ rosrun map_server map_saver -f mymap
+11-after saving you will find to files in your workspace with the extentions yaml and pgm. 
+
+ 
